@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block title %}Stuff I Watched{% endblock %}
+
+{% block header %}Stuff I Watched{% endblock %}
+
+{% block main %}
+    <div class="consumed-media">
+        <hr>
+        <h1>Movies</h1>
+        <div class="top3">
+            <hr>
+            <h2>Top 3 Movies</h2>
+            <ol>
+                <li>
+                    <div class="spef_movie">
+                        <img src="iron-giant" alt="file poster of the moive the Iron Giant">
+                        <br><small>The Iron Giant (year)</small>
+                    </div>
+                </li>
+                <li>
+                    <div class="spef_movie">
+                        <img src="holy-grail" alt="file poster of the moive Monty Python and the Holy Grail">
+                        <br><small>Monty Python and the Holy Grail(year)</small>
+                    </div>
+                </li>
+                <li>
+                    <div class="spef_movie">
+                        <img src="" alt="unkown">
+                        <br><small>UNKOWN (year)</small>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <div id="all-movies">
+            <hr>
+            <h2>All Movies</h2>
+            <ul>
+                <li>
+                    {{content|safe}}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="consumed-media">
+        <hr>
+        <h1>TV shows</h1>
+        <div class="top3">
+            <ol>
+                <li>
+                    <img src="one-piece" alt="one piece art from egghead arc">
+                    <small>One piece (egghead arc)</small>
+                </li>
+                <li>
+                    <img src="community" alt="tv show community poster">
+                    <small>Community</small>
+                </li>
+                <li>
+                    <img src="start-gate" alt="art from the tv show star gate sg1">
+                    <small>Star Gate SG1</small>
+                </li>
+            </ol>
+        </div>
+        <div id="all-shows">
+            <h2>All tv shows I have watched</h2>
+            <h6>In no paticular order</h6>
+            <ul>
+                {% for show in tvcontent %}
+                    <li>
+                        {{ show }}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+{% endblock %}
