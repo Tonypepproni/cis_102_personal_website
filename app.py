@@ -28,19 +28,23 @@ def travel():
 @app.route('/media')
 def media():
     tv_shows=[]
-    with open('tv_show.txt','r') as file:
-        x=file.read()
-        x.replace('\n','<br><br>')
-        tv_shows.append(x)
-        print(tv_shows)
+    movies=[]
 
-    with open('movies.txt','r') as file:
-        file_content=file.read()
+    file = open("tv_show.txt",'r')
 
-    file_content.replace('\n','<br><br>')
-    print(file_content)
+    for i in file:
+        tv_shows.append(i)
 
-    return render_template('media.html',content=file_content,tvcontent=tv_shows)
+    file.close()
+
+    file = open("movies.txt","r")
+
+    for i in file:
+        movies.append(i)
+
+    file.close()
+
+    return render_template('media.html',movies=movies,tvcontent=tv_shows)
 
 @app.route('/collect')
 def collect():
