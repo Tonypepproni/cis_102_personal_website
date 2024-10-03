@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}Collections{% endblock %}
+
+{% block header %}Collections<hr>{% endblock %}
+
+{% block main %}
+    <p>I collect Coins, Patches, Maps/pins and MTG cards</p>
+    <div class="collect">
+        <hr>
+        <h2>Coins</h2>
+    </div>
+
+    <div class="collect">
+        <hr>
+        <h2>Patches</h2>
+    </div>
+
+    <div class="collect">
+        <hr>
+        <h2>Unigrid Maps/pins</h2>
+        <p>Every national park site I go to I get a map and pin</p>
+        <p>
+            This is the pins<br>
+            There are XX pins
+        </p>
+        <p>
+            This is the maps<br>
+            There are XX maps<br>
+            The newest one is from XX park
+        </p>
+    </div>
+
+    <div class="collect">
+        <hr>
+        <h2>MTG cards</h2>
+
+        <p>
+            These are some of my favorite magic cards<br>
+            The cards coressponding set list is:
+        </p>
+        <ul>
+            {% for card in cards %}
+            <li>
+                <p>{{ card.name }}:{{ card.set }}</p>
+            </li>
+        </ul>
+    </div>
+{% endblock %}

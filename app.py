@@ -2,15 +2,35 @@ from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
+@app.context_processor
+def nav_items_inject():
+    nav_items=[
+        {'name':'home','url':'/'},
+        {'name':'socials','url':'/socials'},
+        {'name':'travel','url':'/travel'},
+        {'name':'collections','url':'/collect'}
+    ]
+    return dict(nav_items=nav_items)
+
 @app.route('/')
-def index():
+def home():
+    return render_template('home.html')
 
-    with open('names.txt', 'r') as file:
-        file_content=file.read()
+@app.route('/socials')
+def socials():
+    return render_template('socials.html')
 
-    file_content = file_content.replace('\n','<br><br>')
+@app.route('/travel')
+def travel():
+    return render_template('travel.html')
 
-    return render_template('index.html',content=file_content)
+app.route('/collect')
+def collect():
+    cards=[
+        {'name':'jeweled lotus','set':'commander'}
+    ]
+
+    return render_template('collect.html',cards=cards)
 
 if __name__ == "__main__":
     app.run(debug=True)

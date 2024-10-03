@@ -2,15 +2,36 @@
 
 <html>
     <head>
+        <meta charset="utf-8">
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-        {% block head %}{% endblock %}
+        <title>{% block title %}{% endblock %}</title>
     </head>
 
-    <nav>
-            <h1>THIS IS A NAV BAR</h1>
-    </nav>
-
     <body>
-        {% block body %}{% endblock %}
+        <header>
+            <h1>My website</h1>
+            {% block header %}
+            <h6>Default title</h6>
+            {% endblock %}
+        </header>
+
+        <nav>
+            <ul>
+                {% for page in nav_items %}
+                    <li>
+                        <a href ="{{ page.url }}">{{ page.name }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+
+        <main>{% block main %}
+
+        {% endblock %}</main>
+
+        <footer>
+
+        </footer>
+
     </body>
 </html>
