@@ -10,6 +10,9 @@ body {
 header {
     background-color: #262d79;
     color: #a9c9dd;
+    border: 5px solid #475492;
+    border-radius: 0px 0px 15px 15px;
+    border-top: 0;
 }
 
 nav {
@@ -47,10 +50,25 @@ header {
     align-items: center;
 }
 
+#all-shows {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#all-movies {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .consumed-media{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #262d79;
     color: #88a2c4;
+    margin: 20px 0px;
+    border: 5px solid #475492;
+    border-radius: 15px;
 }
