@@ -1,4 +1,5 @@
 from flask import Flask, render_template, url_for
+import csv
 
 app = Flask(__name__)
 
@@ -54,9 +55,13 @@ def media():
 
 @app.route('/collect')
 def collect():
-    cards=[
-        {'name':'jeweled lotus','set':'commander'}
-    ]
+    
+    cards = []
+
+    with open('mtg_cards.csv', mode ='r')as file:
+        csvFile = csv.DictReader(file)
+        for line in csvFile:
+            cards.append(line)
 
     return render_template('collect.html',cards=cards)
 

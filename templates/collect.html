@@ -5,19 +5,15 @@
 {% block header %}Collections<hr>{% endblock %}
 
 {% block main %}
-    <p>I collect Coins, Patches, Maps/pins and MTG cards</p>
     <div class="collect_item">
-        <hr>
         <h2>Coins</h2>
     </div>
 
     <div class="collect_item">
-        <hr>
         <h2>Patches</h2>
     </div>
 
     <div class="collect_item">
-        <hr>
         <h2>Unigrid Maps/pins</h2>
         <p>Every national park site I go to I get a map and pin</p>
         <p>
@@ -32,7 +28,6 @@
     </div>
 
     <div class="collect_item">
-        <hr>
         <h2>MTG cards</h2>
 
         <p>
@@ -42,7 +37,8 @@
         <ul>
             {% for card in cards %}
             <li>
-                <p>{{ card.name }}:{{ card.set }}</p>
+                <img class="card_image" src="{{ url_for('static', filename='images/mtg_cards/' + card.img) }}" alt="Magic the gathering's card {{ card.name }} from the {{ card.set }} set">
+                <p>{{ card.name }} : {{ card.set }}</p>
             </li>
             {% endfor %}
         </ul>
