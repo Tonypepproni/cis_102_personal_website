@@ -40,14 +40,14 @@ def media():
     tv_shows=[]
     movies=[]
 
-    file = open("tv_show.txt",'r')
+    file = open("static/text/tv_show.txt",'r')
 
     for i in file:
         tv_shows.append(i)
 
     file.close()
 
-    file = open("movies.txt","r")
+    file = open("static/text/movies.txt","r")
 
     for i in file:
         movies.append(i)
