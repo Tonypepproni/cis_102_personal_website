@@ -60,13 +60,21 @@ def media():
 def collect():
     
     cards = []
+    maps = []
+    pins = []
+    coins = []
 
     with open('static/info/mtg_cards.csv', mode ='r')as file:
         csvFile = csv.DictReader(file)
         for line in csvFile:
             cards.append(line)
 
-    return render_template('collect.html',cards=cards)
+    with open('static/info/maps.csv', mode='r') as file:
+        csvFile = csv.DictReader(file)
+        for line in csvFile:
+            maps.append(line)
+
+    return render_template('collect.html',cards=cards,maps=maps)
 
 @app.route('/site_map')
 def site_map():
