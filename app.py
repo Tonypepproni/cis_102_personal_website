@@ -40,14 +40,14 @@ def media():
     tv_shows=[]
     movies=[]
 
-    file = open("static/text/tv_show.txt",'r')
+    file = open("static/info/tv_show.txt",'r')
 
     for i in file:
         tv_shows.append(i)
 
     file.close()
 
-    file = open("static/text/movies.txt","r")
+    file = open("static/info/movies.txt","r")
 
     for i in file:
         movies.append(i)
@@ -61,7 +61,7 @@ def collect():
     
     cards = []
 
-    with open('mtg_cards.csv', mode ='r')as file:
+    with open('static/info/mtg_cards.csv', mode ='r')as file:
         csvFile = csv.DictReader(file)
         for line in csvFile:
             cards.append(line)
