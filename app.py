@@ -12,7 +12,16 @@ def nav_items_inject():
         {'name':'collection','url':'/collect'},
         {'name':'media','url':'/media'}
     ]
-    return dict(nav_items=nav_items)
+    sites=[
+        {'name':'home','url':'/'},
+        {'name':'socials','url':'/socials'},
+        {'name':'travel','url':'/travel'},
+        {'name':'collection','url':'/collect'},
+        {'name':'media','url':'/media'},
+        {'name':'site map','url':'/site_map'}
+    ]
+
+    return dict(nav_items=nav_items,sites=sites)
 
 @app.route('/')
 def home():
@@ -65,19 +74,9 @@ def collect():
 
     return render_template('collect.html',cards=cards)
 
-@app.route('/sitemap')
-def sitemap():
-
-    sites=[
-        {'name':'home','url':'/'},
-        {'name':'socials','url':'/socials'},
-        {'name':'travel','url':'/travel'},
-        {'name':'collection','url':'/collect'},
-        {'name':'media','url':'/media'},
-        {'name':'site map','url':'/sitemap'}
-    ]
-
-    return render_template("site_map.html",sites=sites)
+@app.route('/site_map')
+def site_map():
+    return render_template("site_map.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -32,7 +32,14 @@
         <footer>
             <div id="top-footer">
                 <div id="footer-links">
-                    <a href="/">Home</a>
+                    <ul>
+                        {% for items in nav_items %}
+                            <li>
+                                <a href="{{ items.url }}">{{ items.name }}</a>
+                            </li>
+                        {% endfor %}
+                        <li><a href="/site_map">site map</a></li>
+                    </ul>
                 </div>
             </div>
         </footer>

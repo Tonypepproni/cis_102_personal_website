@@ -5,12 +5,15 @@
 {% block header %}<h6>Site Map</h6>{% endblock %}
 
 {% block main %}
-<h3>All pages</h3>
-<ul>
-    {% for site in sites %}
-        <li>
-            <a href="{{ site.url }}">{{ site.name }}</a>
-        </li>
-    {% endfor %}
-</ul>
+
+<div id="all-sites">
+    <h3>All pages</h3>
+    <ul>
+        {% for site in sites %}
+            <li>
+                <a href="{{ site.url }}">{{ site.name }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
 {% endblock %}
