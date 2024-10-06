@@ -31,26 +31,15 @@
             </ol>
         </div>
         <h2>All Movies</h2>
-        <div id="all-movies">
-            <div id="left-movies">
+            <div id="all-movies">
                 <ul>
-                    {% for show in left_movies %}
+                    {% for show in all_movies %}
                         <li>
                             {{ show }}
                         </li>
                     {% endfor %}
                 </ul>
             </div>
-            <div id="right_movies">
-                <ul>
-                    {% for show in right_movies %}
-                        <li>
-                            {{ show }}
-                        </li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
     </div>
 
     <div class="consumed-media">
@@ -73,27 +62,15 @@
             </ol>
         </div>
         <h2>All tv shows I have watched</h2>
-        <h6>In no paticular order</h6>
-        <div id="all-shows">
-            
-            <div id="left-shows">
+        <h6>In no paticular order</h6>            
+            <div id="all-shows">
                 <ul>
-                    {% for show in left_shows %}
+                    {% for show in all_shows %}
                         <li>
                             {{ show }}
                         </li>
                     {% endfor %}
                 </ul>
             </div>
-            <div id="right_shows">
-                <ul>
-                    {% for show in right_shows %}
-                        <li>
-                            {{ show }}
-                        </li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
     </div>
 {% endblock %}

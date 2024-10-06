@@ -91,6 +91,15 @@ nav > ul > li:hover, #all-sites li:hover {
     border-radius: 15px;
 }
 
+#all-shows > ul, #all-movies > ul{
+    column-count: 2;
+    list-style-type: none;
+}
+
+#all-shows >  ul > li, #all-movies > ul > li {
+    margin: 5px 10px;
+}
+
 .collect_item > ul {
     list-style-type: none;
 }

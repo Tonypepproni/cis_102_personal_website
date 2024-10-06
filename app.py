@@ -47,9 +47,6 @@ def media():
 
     file.close()
 
-    left_shows=tv_shows[len(tv_shows)//2:]
-    right_shows=tv_shows[:len(tv_shows)//2]
-
     file = open("movies.txt","r")
 
     for i in file:
@@ -57,10 +54,7 @@ def media():
 
     file.close()
 
-    left_movies=movies[len(movies)//2:]
-    right_movies=movies[:len(movies)//2]
-
-    return render_template('media.html',left_movies=left_movies,right_movies=right_movies,left_shows=left_shows,right_shows=right_shows)
+    return render_template('media.html',all_movies=movies,all_shows=tv_shows)
 
 @app.route('/collect')
 def collect():
