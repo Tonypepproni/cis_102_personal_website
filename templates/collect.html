@@ -20,11 +20,16 @@
             This is the pins<br>
             There are XX pins
         </p>
-        <p>
-            This is the maps<br>
-            There are XX maps<br>
-            The newest one is from XX park
-        </p>
+        <div id="maps">
+            <h3>These are all my maps</h3>
+            <ol>
+                {% for map in maps %}
+                    <li>
+                        <b>{{ map.name }}</b> : {{ map.site_type }} : {{ map.state }}
+                    </li>
+                {% endfor %}
+            </ol>
+        </div>
     </div>
 
     <div class="collect_item">
