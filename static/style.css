@@ -32,6 +32,7 @@ nav > ul {
     justify-content: center;
     overflow: hidden;
     list-style-type: none;
+    flex-wrap: wrap;
 }
 
 nav > ul > li {
