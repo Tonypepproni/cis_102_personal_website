@@ -63,11 +63,13 @@ nav > ul > li:hover, #all-sites li:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 #all-sites > ul {
     list-style-type: none;
     column-count: 2;
+    padding-left: 0px;
 }
 
 #all-sites li {
