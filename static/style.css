@@ -1,3 +1,7 @@
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     font-family: sans-serif;
@@ -5,6 +9,10 @@ body {
     width: 80%;
     text-align: center;
     margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 header {
@@ -83,7 +91,7 @@ nav > ul > li:hover, #all-sites li:hover {
     justify-content: center;
 }
 
-.consumed-media, .collect_item, #all-sites{
+.consumed-media, .collect_item, #all-sites, #home_con{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,14 +122,20 @@ nav > ul > li:hover, #all-sites li:hover {
     border-radius: 20px;
 }
 
+#home_con{
+    
+}
+
 footer {
     background-color: #262d79;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     border: 5px solid #475492;
     border-radius: 15px 15px 0px 0px;
     border-bottom: 0; 
+    margin-top: auto;
 }
 
 #footer-links{
