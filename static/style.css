@@ -105,6 +105,16 @@ nav > ul > li:hover, #all-sites li:hover {
     border-radius: 15px;
 }
 
+#all-shows, #all-movies {
+    overflow-y: scroll;
+    height: 200px;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    border: 5px solid #475492;
+}
+
 #all-shows > ul, #all-movies > ul{
     column-count: 2;
     list-style-type: none;
