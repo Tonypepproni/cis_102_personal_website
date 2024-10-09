@@ -1,2 +1,7 @@
 route,name,template
-/,home,home.html
+/,Home,home.html
+/socials,Socials,socials.html
+/travel,Travel,travel.html
+/media,Media,Media.html
+/collect,Collections,collect.html
+/site_map,Site Map,site_map.html
