@@ -77,7 +77,7 @@ class Media(Basic):
 
 templates=[]
 
-with open('template_info.csv', mode ='r')as file:
+with open('static/infotemplate_info.csv', mode ='r')as file:
         csvFile = csv.DictReader(file)
         for line in csvFile:
             templates.append(line)
