@@ -12,7 +12,6 @@ class Basic(View): #genral class used to render templates
         self.page_title=page_title #name that will appear on top of the page
         self.nav_items=[
             {'name':'home','url':'/'},
-            {'name':'socials','url':'/socials'},
             {'name':'travel','url':'/travel'},
             {'name':'collection','url':'/collect'},
             {'name':'media','url':'/media'}
