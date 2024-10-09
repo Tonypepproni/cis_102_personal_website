@@ -3,7 +3,7 @@ import pandas as pd
 
 df=pd.read_csv('static/info/parks.csv')
 
-m = folium.Map(location=(30, 10), zoom_start=3, tiles="cartodb positron")
+m = folium.Map(location=(39.50, -98.35), zoom_start=3, tiles="cartodb positron")
 
 for i in range(0,len(df)):
     if df.iloc[i]['type']=='NP':
