@@ -54,6 +54,24 @@ class Collect(Basic):
         cards=self.cards,
         maps=self.maps
         )
+
+class Media(Basic):
+
+        def dispatch_request(self):            
+
+            self.movies=[]
+            self.tv_shows=[]
+
+            return render_template(
+            self.temp_name,
+            title=self.title,
+            page_title=self.page_title,
+            nav_items=self.nav_items,
+            sites=self.sites,
+            all_movies=self.movies,
+            all_shows=self.tv_shows
+            )
+
 templates=[]
 
 with open('template_info.csv', mode ='r')as file:
@@ -67,10 +85,12 @@ for i in templates:
      sites.append({'name':i['name'],'url':i['route']})
 
 for temp in templates:
-     if temp['type']=='collect':
+    if temp['type']=='collect':
         cla.add_url_rule(temp['route'],view_func=Collect.as_view(temp['name'],temp['template'],temp['name'],temp['page_title'],sites))
-else:
-    cla.add_url_rule(temp['route'],view_func=Collect.as_view(temp['name'],temp['template'],temp['name'],temp['page_title'],sites))
+    elif temp['type']=='media':
+        cla.add_url_rule(temp['route'],view_func=Media.as_view(temp['name'],temp['template'],temp['name'],temp['page_title'],sites))         
+    else:
+        cla.add_url_rule(temp['route'],view_func=Basic.as_view(temp['name'],temp['template'],temp['name'],temp['page_title'],sites))
 
 if __name__ == '__main__':
     cla.run(debug=True)
