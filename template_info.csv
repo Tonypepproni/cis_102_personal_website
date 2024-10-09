@@ -1,7 +1,7 @@
-route,name,template
-/,Home,home.html
-/socials,Socials,socials.html
-/travel,Travel,travel.html
-/media,Media,Media.html
-/collect,Collections,collect.html
-/site_map,Site Map,site_map.html
+route,name,template,page_title
+/,Home,home.html,HOME
+/socials,Socials,socials.html,SOCIALS
+/travel,Travel,travel.html,TRAVEL
+/media,Media,Media.html,STUFF I'VE WATCHED
+/collect,Collections,collect.html,COLLECTIONS
+/site_map,Site Map,site_map.html,SITE MAP

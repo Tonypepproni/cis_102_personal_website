@@ -6,7 +6,7 @@ import csv
 cla=Flask(__name__)
 
 class Home(View):
-    def __init__(self,temp_name,title,page_title):
+    def __init__(self,temp_name,title,page_title,templates):
         self.temp_name=temp_name
         self.title=title
         self.page_title=page_title
@@ -29,7 +29,7 @@ with open('template_info.csv', mode ='r')as file:
             templates.append(line)
 
 for temp in templates:
-     cla.add_url_rule(temp['route'],view_func=Home.as_view(temp['name'],temp['template'],temp['name'],temp['name']))
+     cla.add_url_rule(temp['route'],view_func=Home.as_view(temp['name'],temp['template'],temp['name'],temp['page_title']))
 
 if __name__ == '__main__':
     cla.run(debug=True)
