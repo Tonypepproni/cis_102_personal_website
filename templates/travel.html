@@ -6,10 +6,9 @@
 
 {% block main %}
     <div id="nat_sites">
+        <h3>Map of all national park sites I have been too</h3>
         <div id="nat_sites_map">
-            <iframe src="footprint.html" title="a map of national park sites ive visted">
-
-            </iframe>
+            <iframe src="{{ url_for('static', filename='footprint.html') }}" title="a map of national park sites ive visted"></iframe>
         </div>
     </div>
 
