@@ -35,7 +35,7 @@
                 <ul>
                     {% for show in all_movies %}
                         <li>
-                            {{ show }}
+                            {{ show.title }} : {{ show.year }}
                         </li>
                     {% endfor %}
                 </ul>
@@ -67,7 +67,7 @@
                 <ul>
                     {% for show in all_shows %}
                         <li>
-                            {{ show }}
+                            {{ show.title }}
                         </li>
                     {% endfor %}
                 </ul>

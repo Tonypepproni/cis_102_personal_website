@@ -62,6 +62,9 @@ class Media(Basic):
             self.movies=[]
             self.tv_shows=[]
 
+            self.tv_shows=Basic.csv_reader(self,'tv_show.csv',self.tv_shows)
+            self.movies=Basic.csv_reader(self,'movies.csv',self.movies)
+
             return render_template(
             self.temp_name,
             title=self.title,

@@ -111,7 +111,7 @@ nav > ul > li:hover, #all-sites li:hover {
 }
 
 #all-shows >  ul > li, #all-movies > ul > li {
-    margin: 5px 10px;
+    margin-bottom: 10px;
 }
 
 .collect_item > ul {
