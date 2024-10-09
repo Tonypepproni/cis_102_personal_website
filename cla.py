@@ -5,28 +5,28 @@ import csv
 
 cla=Flask(__name__)
 
-class Basic(View):
+class Basic(View): #genral class used to render templates
     def __init__(self,temp_name,title,page_title,sites):
-        self.temp_name=temp_name
-        self.title=title
-        self.page_title=page_title
+        self.temp_name=temp_name #name of the template to be used
+        self.title=title #name that will appear as the title
+        self.page_title=page_title #name that will appear on top of the page
         self.nav_items=[
             {'name':'home','url':'/'},
             {'name':'socials','url':'/socials'},
             {'name':'travel','url':'/travel'},
             {'name':'collection','url':'/collect'},
             {'name':'media','url':'/media'}
-        ]
-        self.sites=sites
+        ] #items in the nav bar
+        self.sites=sites #a list of all sites
 
-    def csv_reader(self,file_name,list):
+    def csv_reader(self,file_name,list): #opens a csv file, makes each line a dict, puts each line in a list and returns it
         with open(f'static/info/{file_name}',mode='r') as file:
             csvFile=csv.DictReader(file)
             for line in csvFile:
                 list.append(line)
         return list
 
-    def dispatch_request(self):
+    def dispatch_request(self): #Is called when a client wants to view the webpage
         return render_template(
             self.temp_name,
             title=self.title,
@@ -35,7 +35,7 @@ class Basic(View):
             sites=self.sites
         )
 
-class Collect(Basic):
+class Collect(Basic): #a child of class used for collect style webpage
                  
     def dispatch_request(self):
         
@@ -88,6 +88,7 @@ for i in templates:
      sites.append({'name':i['name'],'url':i['route']})
 
 for temp in templates:
+    #instaniates classes and passes them certain variables from the dict
     if temp['type']=='collect':
         cla.add_url_rule(temp['route'],view_func=Collect.as_view(temp['name'],temp['template'],temp['name'],temp['page_title'],sites))
     elif temp['type']=='media':
