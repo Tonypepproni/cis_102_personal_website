@@ -2,7 +2,6 @@ from flask import Flask, render_template
 from flask.views import View
 import csv
 
-
 cla=Flask(__name__)
 
 class Basic(View): #genral class used to render templates
