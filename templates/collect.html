@@ -39,7 +39,7 @@
             These are some of my favorite magic cards<br>
             The cards coressponding set list is:
         </p>
-        <ul>
+        <ul id="mtg">
             {% for card in cards %}
             <li>
                 <img class="card_image" src="{{ url_for('static', filename='images/mtg_cards/' + card.img) }}" alt="Magic the gathering's card {{ card.name }} from the {{ card.set }} set">

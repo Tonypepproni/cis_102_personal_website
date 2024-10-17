@@ -12,7 +12,6 @@ class Basic(View): #genral class used to render templates
         self.page_title=page_title #name that will appear on top of the page
         self.nav_items=[
             {'name':'home','url':'/'},
-            {'name':'socials','url':'/socials'},
             {'name':'travel','url':'/travel'},
             {'name':'collection','url':'/collect'},
             {'name':'media','url':'/media'}
@@ -76,16 +75,13 @@ class Media(Basic):
             )
 
 templates=[]
+sites=[]
 
-with open('template_info.csv', mode ='r')as file:
+with open('static/infotemplate_info.csv', mode ='r')as file:
         csvFile = csv.DictReader(file)
         for line in csvFile:
             templates.append(line)
-
-sites=[]
-
-for i in templates:
-     sites.append({'name':i['name'],'url':i['route']})
+            sites.append({'name':line['name'],'url':line['route']})
 
 for temp in templates:
     #instaniates classes and passes them certain variables from the dict
