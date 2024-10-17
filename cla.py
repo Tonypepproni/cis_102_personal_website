@@ -97,4 +97,4 @@ for temp in templates:
         cla.add_url_rule(temp['route'],view_func=Basic.as_view(temp['name'],temp['template'],temp['name'],temp['page_title'],sites))
 
 if __name__ == '__main__':
-    cla.run(debug=True)
+    cla.run(host='0.0.0.0', port=5000 ,debug=True)

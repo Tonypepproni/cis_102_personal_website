@@ -2,6 +2,6 @@ type,route,name,template,page_title
 basic,/,Home,home.html,HOME
 basic,/socials,Socials,socials.html,SOCIALS
 basic,/travel,Travel,travel.html,TRAVEL
-media,/media,Media,Media.html,STUFF I'VE WATCHED
+media,/media,Media,media.html,STUFF I'VE WATCHED
 collect,/collect,Collections,collect.html,COLLECTIONS
 basic,/site_map,Site Map,site_map.html,SITE MAP
