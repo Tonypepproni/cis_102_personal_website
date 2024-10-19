@@ -32,4 +32,4 @@ for i in range(0,len(df)):
             icon=iconMaker('red','binoculars','fa')#creates a marker with this style
         ).add_to(m)
 
-m.save("footprint.html")
+m.save("static/footprint.html")
