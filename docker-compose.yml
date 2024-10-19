@@ -1,0 +1,7 @@
+services:
+  flask-app:
+    build: .
+    image: nic0ro/personal:v1release
+
+    ports:
+      - "5000:5000"
