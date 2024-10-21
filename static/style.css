@@ -5,6 +5,8 @@ html, body {
 body {
     margin: 0;
     font-family: sans-serif;
+    background: linear-gradient(168deg, rgba(2,0,36,1) 0%, rgba(2,2,64,1) 17%, rgba(3,4,94,1) 35%, rgba(2,52,131,1) 51%, rgba(1,111,177,1) 69%, rgba(1,160,215,1) 84%, rgba(0,212,255,1) 100%);
+    background-attachment: fixed;
     background-color: #03045e;
     width: 80%;
     text-align: center;
