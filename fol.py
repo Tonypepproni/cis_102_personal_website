@@ -17,7 +17,7 @@ def htmlMaker(df,i):
     <html>
         <body><center>
             <h3>{df.iloc[i]['name']}</h3>
-            <p>{df.iloc[i]['type']}</p>
+            <p>{df.iloc[i]['disp']}</p>
             <h3>Dates visted</h3>
             <p>{df.iloc[i]['dates']}</p>
         </center></body>

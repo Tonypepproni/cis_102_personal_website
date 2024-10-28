@@ -11,9 +11,13 @@
             <iframe src="{{ url_for('static', filename='footprint.html') }}" title="a map of national park sites ive visted"></iframe>
         </div>
         <div id="nat_sites_stats">
-            <h3>National park sites ive been too stats</h3>
-            <ul>
-                <li>PLACE HOLDER</li>
+            <h3>National Park Sites I've Been to</h3>
+            <ul id="all_parks">
+                {% for park in parks %}
+                    <li>
+                        {{ park.name }} : {{ park.disp }}
+                    </li>
+                {% endfor %}
             </ul>
         </div>
     </div>

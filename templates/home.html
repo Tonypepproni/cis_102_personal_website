@@ -7,6 +7,81 @@
 {% block main %}
     <div id="home_con">
         <h4>This is my home page</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta ut hic dolores distinctio, repellendus quae earum sed adipisci. Illum asperiores rem excepturi sunt eius ducimus, voluptatibus similique facere unde magnam.</p>
+        <p>This webpage has info about stuff that I just like</p>
+        <img id="herc" src="static/images/hercbeetle.jpg">
+        <p>I like this beetle</p>
+
+        <table>
+            <tr>
+                <th rowspan="2">There are many types of beetles</th>
+                <th colspan="2">I like hercules beetle</th>
+            </tr>
+            <tr>
+                <th>I dont like beetles in my house</th>
+                <th>I like beetles that are not in my house</th>
+            </tr>
+            <tr>
+                <td>I</td>
+                <td>Like</td>
+                <td>Beetles</td>
+            </tr>
+            <tr>
+                <td colspan="3">Especially the hercules beetle</td>
+            </tr>
+        </table>
+        <table>
+            <caption>Things that are not beetles</caption>
+            <tr>
+                <th>Alive</th>
+                <th>Wood</th>
+                <th>Ocean</th>
+                <th>Ahhh</th>
+            </tr>
+            <tr>
+                <td>Birb</td>
+                <td>Chair</td>
+                <td>Alantic</td>
+                <td>The power of shadows</td>
+            </tr>
+            <tr>
+                <td>You</td>
+                <td>Mahogany Table</td>
+                <td>Alantic</td>
+                <td>A DVD boxset of the Crown</td>
+            </tr>
+            <tr>
+                <td>Beetles</td>
+                <td>Bridge</td>
+                <td>Titan Submersiable</td>
+                <td>King Gizzard and the Lizard Wizard</td>
+            </tr>
+            <tr>
+                <td>The mold in the basement</td>
+                <td>Witches</td>
+                <td>Alantic</td>
+                <td>Mr. World Wide, Mr. 305</td>
+            </tr>
+        </table>
+        <div id="form">
+            <form>
+                <div class="button">
+                    <label for="radio">Radio Button</label>
+                    <input type="radio" name="radio" required>
+                </div>
+                <label for="text">Text box</label>
+                <input type="text" name="text" required>
+                <label for="selector">Choose something</label>
+                <select name="selector">
+                    <option value="" >Choose something</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+                <div class="button">
+                    <label for="check">Check box</label>
+                    <input name="check" type="checkbox">
+                </div>
+            </form>
+        </div>        
     </div>
 {% endblock %}
