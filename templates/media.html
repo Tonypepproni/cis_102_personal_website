@@ -9,57 +9,52 @@
         <h1>Movies</h1>
         <div class="top3">
             <h2>Top 3 Movies</h2>
-            <ol>
+            <ul>
                 <li>
                     <div class="spef_movie">
-                        <img src="iron-giant" alt="file poster of the moive the Iron Giant">
-                        <br><small>The Iron Giant (year)</small>
+                        <img src="static/images/holy-grail.jpg" alt="file poster of the moive Monty Python and the Holy Grail">
+                        <br><small>Monty Python and the Holy Grail 1975</small>
                     </div>
                 </li>
                 <li>
                     <div class="spef_movie">
-                        <img src="holy-grail" alt="file poster of the moive Monty Python and the Holy Grail">
-                        <br><small>Monty Python and the Holy Grail(year)</small>
-                    </div>
+                        <img src="static/images/iron-giant.jpg" alt="file poster of the moive the Iron Giant">
+                        <br><small>The Iron Giant 1999</small>
                 </li>
                 <li>
                     <div class="spef_movie">
-                        <img src="" alt="unkown">
-                        <br><small>UNKOWN (year)</small>
+                        <img src="static/images/good-will.jpg" alt="Good Will Hunting movie poster">
+                        <br><small>Good Will Hunting 1997</small>
                     </div>
                 </li>
-            </ol>
+            </ul>
         </div>
-        <h2>All Movies</h2>
-            <div id="all-movies">
-                <ul>
-                    {% for show in all_movies %}
-                        <li>
-                            {{ show.title }} : {{ show.year }}
-                        </li>
-                    {% endfor %}
-                </ul>
-            </div>
     </div>
 
     <div class="consumed-media">
         <h1>TV shows</h1>
         <div class="top3">
             <h2>Top 3 TV Shows</h2>
-            <ol>
+            <ul>
                 <li>
-                    <img src="one-piece" alt="one piece art from egghead arc">
-                    <small>One piece (egghead arc)</small>
+                    <div class="spef_movie">
+                        <img src="static/images/onePiece.jpg" alt="one piece art from egghead arc">
+                        <small>One piece (egghead arc)</small>
+                    </div>
                 </li>
                 <li>
-                    <img src="community" alt="tv show community poster">
-                    <small>Community</small>
+                    <div class="spef_movie">
+                        <img src="static/images/community.jpg" alt="tv show community poster">
+                        <small>Community</small>
+                    </div>
                 </li>
                 <li>
-                    <img src="start-gate" alt="art from the tv show star gate sg1">
-                    <small>Star Gate SG1</small>
+                    <div class="spef_movie">
+                        <img src="static/images/sg1.jpg" alt="art from the tv show star gate sg1">
+                        <small>Star Gate SG1</small>
+                    </div>
                 </li>
-            </ol>
+            </ul>
         </div>
         <h2>All tv shows I have watched</h2>
         <h6>In no paticular order</h6>            
