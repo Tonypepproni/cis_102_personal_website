@@ -73,6 +73,23 @@ class Media(Basic):
             all_shows=self.tv_shows
             )
 
+class Travel(Basic):
+    def __init__(self, temp_name, title, page_title, sites):
+        super().__init__(temp_name, title, page_title, sites)
+        self.parks=[]
+        self.parks=Basic.csv_reader(self,'parks.csv',self.parks)
+
+    def dispatch_request(self):
+
+        return render_template(
+            self.temp_name,
+            title=self.title,
+            page_title=self.page_title,
+            nav_items=self.nav_items,
+            sites=self.sites,
+            parks=self.parks
+        )
+
 templates=[]
 sites=[]
 
@@ -87,7 +104,9 @@ for temp in templates:
     if temp['type']=='collect':
         cla.add_url_rule(temp['route'],view_func=Collect.as_view(temp['name'],temp['template'],temp['name'],temp['page_title'],sites))
     elif temp['type']=='media':
-        cla.add_url_rule(temp['route'],view_func=Media.as_view(temp['name'],temp['template'],temp['name'],temp['page_title'],sites))         
+        cla.add_url_rule(temp['route'],view_func=Media.as_view(temp['name'],temp['template'],temp['name'],temp['page_title'],sites))
+    elif temp['type']=='travel':
+        cla.add_url_rule(temp['route'],view_func=Travel.as_view(temp['name'],temp['template'],temp['name'],temp['page_title'],sites))         
     else:
         cla.add_url_rule(temp['route'],view_func=Basic.as_view(temp['name'],temp['template'],temp['name'],temp['page_title'],sites))
 

@@ -96,7 +96,7 @@ nav > ul > li:hover, #all-sites li:hover {
     justify-content: center;
 }
 
-.consumed-media, .collect_item, #all-sites, #home_con, #nat_sites{
+.consumed-media, .collect_item, #all-sites, #home_con, #nat_sites, #form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,6 +105,7 @@ nav > ul > li:hover, #all-sites li:hover {
     margin: 20px 0px;
     border: 5px solid #475492;
     border-radius: 15px;
+    padding: 5px;
 }
 
 #nat_sites_map {
@@ -122,6 +123,18 @@ nav > ul > li:hover, #all-sites li:hover {
     margin: 10px;
 }
 
+#all_parks li{
+    display: flex;
+    list-style-type: disc;
+}
+
+#nat_sites_stats{
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid #475492;
+    border-radius: 15px;
+}
+
 #all-shows, #all-movies {
     overflow-y: scroll;
     height: 200px;
@@ -137,7 +150,7 @@ nav > ul > li:hover, #all-sites li:hover {
     list-style-type: none;
 }
 
-#all-shows >  ul > li, #all-movies > ul > li {
+#all-shows >  ul > li, #all-movies > ul > li{
     margin-bottom: 10px;
 }
 
@@ -168,19 +181,66 @@ nav > ul > li:hover, #all-sites li:hover {
     border-radius: 20px;
 }
 
+#herc {
+    height: auto;
+    width: 80%;
+    margin: 10px;
+    border: 5px black solid;
+    
+}
+
+#form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px; 
+}
+
+#form label {
+    display: block;
+    font-weight: bold;
+}
+
+#form input[type="text"],
+#form select {
+    display: block;
+    width: 100%;
+    margin-top: 5px; 
+}
+
+#form .button label,
+#form .button input[type="radio"],
+#form .button input[type="checkbox"] {
+    display: inline;
+    width: auto;
+    margin: 0;
+}
+
 footer {
     background-color: #262d79;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
     border: 5px solid #475492;
     border-radius: 15px 15px 0px 0px;
     border-bottom: 0; 
     margin-top: auto;
 }
 
-#footer-links{
+#top-footer{
+    display: flex;
+}
+
+#footer-links, #footer_email{
     padding: 5px 10px;
     background-color: #a9c9dd;
     margin: 5px 20px;
@@ -188,4 +248,15 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px;
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
 }
