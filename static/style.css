@@ -289,3 +289,13 @@ th, td {
     padding: 10px;
     text-align: center;
 }
+
+#sitemap {
+    width: 70%;
+    height: auto;
+}
+
+#unimap{
+    max-width: 80%;
+    height: auto;
+}

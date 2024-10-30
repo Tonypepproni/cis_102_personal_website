@@ -14,14 +14,7 @@
         </p>
         <div id="maps">
             <h3>These are all my maps</h3>
-            <img src="static/images/maps.jpg" alt="A picture of all unigrid maps I own">
-            <ol>
-                {% for map in maps %}
-                    <li>
-                        <b>{{ map.name }}</b> : {{ map.site_type }} : {{ map.state }}
-                    </li>
-                {% endfor %}
-            </ol>
+            <img id="unimap" src="static/images/maps.jpg" alt="A picture of all unigrid maps I own">
         </div>
     </div>
 

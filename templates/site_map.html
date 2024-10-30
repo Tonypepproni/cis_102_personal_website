@@ -8,6 +8,7 @@
 
 <div id="all-sites">
     <h3>All pages</h3>
+    <img usemap="#image-map" src="static/images/sitemap.jpg" alt="sitemap" id="sitemap">
     <ul>
         {% for site in sites %}
             <li>
@@ -16,4 +17,12 @@
         {% endfor %}
     </ul>
 </div>
+
+<map name="image-map">
+    <area target="" alt="sitemap" title="sitemap" href="site_map.html" coords="52,81,319,168" shape="rect">
+    <area target="" alt="home" title="home" href="home.html" coords="437,136,675,226" shape="rect">
+    <area target="" alt="Media" title="Media" href="media.html" coords="123,305,400,358" shape="rect">
+    <area target="" alt="Travel" title="Travel" href="travel.html" coords="706,304,1007,356" shape="rect">
+    <area target="" alt="Collect" title="Collect" href="collect.html" coords="402,378,706,434" shape="rect">
+</map>
 {% endblock %}
