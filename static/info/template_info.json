@@ -1,0 +1,37 @@
+[
+    {
+            "type":"basic",
+            "route":"/",
+            "name":"Home",
+            "template":"home.html",
+            "page_title":"HOME"
+    },
+    {
+        "type":"travel",
+        "route":"/travel",
+        "name":"Travel",
+        "template":"travel.html",
+        "page_title":"TRAVEL"
+    },
+    {
+        "type":"media",
+        "route":"/media",
+        "name":"Media",
+        "template":"Media.html",
+        "page_title":"Stuff I've Watched"
+    },
+    {
+        "type":"collect",
+        "route":"/collect",
+        "name":"Collections",
+        "template":"collect.html",
+        "page_title":"COLLECTIONS"
+    },
+    {
+        "type":"basic",
+        "route":"/site_map",
+        "name":"Site Map",
+        "template":"site_map.html",
+        "page_title":"SITE MAP"
+    }
+]
