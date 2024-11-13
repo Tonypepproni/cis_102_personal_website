@@ -56,7 +56,31 @@ for i in range(0,len(df)):
         folium.Marker(
             location=[df.iloc[i]['lat'],df.iloc[i]['long']],#locates long and lat from the data frame and displays it
             popup=folium.Popup(html=htmlMaker(df,i),max_width=300),
-            icon=iconMaker('yellow','monument','fa')#creates a marker with this style
+            icon=iconMaker('lightred','monument','fa')#creates a marker with this style
+        ).add_to(m)
+    elif df.iloc[i]['type']=='NRA':
+        folium.Marker(
+            location=[df.iloc[i]['lat'],df.iloc[i]['long']],
+            popup=folium.Popup(html=htmlMaker(df,i),max_width=300),
+            icon=iconMaker('darkpurple','compass','fa')
+        ).add_to(m)
+    elif df.iloc[i]['type']=='NS':
+        folium.Marker(
+            location=[df.iloc[i]['lat'],df.iloc[i]['long']],
+            popup=folium.Popup(html=htmlMaker(df,i),max_width=300),
+            icon=iconMaker('darkblue','water','fa')
+        ).add_to(m)
+    elif df.iloc[i]['type']=='NL':
+        folium.Marker(
+            location=[df.iloc[i]['lat'],df.iloc[i]['long']],
+            popup=folium.Popup(html=htmlMaker(df,i),max_width=300),
+            icon=iconMaker('lightblue','wind','fa')
+        ).add_to(m)
+    elif df.iloc[i]['type']=='NMEM':
+        folium.Marker(
+            location=[df.iloc[i]['lat'],df.iloc[i]['long']],
+            popup=folium.Popup(html=htmlMaker(df,i),max_width=300),
+            icon=iconMaker('darkred','archway','fa')
         ).add_to(m)
 
 m.save("static/footprint.html")
