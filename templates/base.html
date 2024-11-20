@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
         <script src="https://kit.fontawesome.com/72d881ae9e.js" crossorigin="anonymous"></script>
+        <script src="static/scripts.js"></script>
 
         <title>{% block title %}{% endblock %}</title>
     </head>
@@ -21,11 +22,11 @@
         <nav>
             <ul>
                 {% for page in nav_items %}
-                    <li>
+                    <li class="nav-item">
                         <a href ="{{ page.url }}">{{ page.name }}</a>
                     </li>
                 {% endfor %}
-                <button onclick="collapse"> <i class="fas fa-bars"></i></button>
+                <button onclick="collapse()"><i class="fas fa-bars"></i></button>
             </ul>
         </nav>
 
