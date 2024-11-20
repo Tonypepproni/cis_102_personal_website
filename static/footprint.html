@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6855e3fba55c3e60c98300fd0c1bde52 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6855e3fba55c3e60c98300fd0c1bde52" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6855e3fba55c3e60c98300fd0c1bde52 = L.map(
+                "map_6855e3fba55c3e60c98300fd0c1bde52",
+                {
+                    center: [39.5, -98.35],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5d84c295785527014d7a04513c9058bd = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_5d84c295785527014d7a04513c9058bd.addTo(map_6855e3fba55c3e60c98300fd0c1bde52);
+        
+    
+            var marker_e83ed05525081c028dd5895a43006f66 = L.marker(
+                [44.34774867659995, -68.2748484660232],
+                {}
+            ).addTo(map_6855e3fba55c3e60c98300fd0c1bde52);
+        
+    
+            var icon_799d56b3de97b671d8e9afd06a063239 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e83ed05525081c028dd5895a43006f66.setIcon(icon_799d56b3de97b671d8e9afd06a063239);
+        
+    
+        var popup_00524af479d049831085ab32d50ebbce = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7ad9807726de35f688e79344deb9b232 = $(`<div id="html_7ad9807726de35f688e79344deb9b232" style="width: 100.0%; height: 100.0%;">     <!DOCTYPE html>     <html>         <body><center>             <h3>Acadia</h3>             <p>National Park</p>             <h3>Dates visted</h3>             <p>7/23/2024-7/25/2024</p>         </center></body>     </html>     </div>`)[0];
+                popup_00524af479d049831085ab32d50ebbce.setContent(html_7ad9807726de35f688e79344deb9b232);
+            
+        
+
+        marker_e83ed05525081c028dd5895a43006f66.bindPopup(popup_00524af479d049831085ab32d50ebbce)
+        ;
+
+        
+    
+    
+            var marker_b40d135c49ef4328b94a9d289cf0ac02 = L.marker(
+                [26.04878429646862, -81.07529404222194],
+                {}
+            ).addTo(map_6855e3fba55c3e60c98300fd0c1bde52);
+        
+    
+            var icon_8ceebbf6a1e9084572e38d40b0b4507b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "binoculars", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b40d135c49ef4328b94a9d289cf0ac02.setIcon(icon_8ceebbf6a1e9084572e38d40b0b4507b);
+        
+    
+        var popup_a6676da277e10d587bf2926abb5db564 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ed6af2df8d81cd2ac531e722391cc1d2 = $(`<div id="html_ed6af2df8d81cd2ac531e722391cc1d2" style="width: 100.0%; height: 100.0%;">     <!DOCTYPE html>     <html>         <body><center>             <h3>Big Cypress</h3>             <p>National Preserve</p>             <h3>Dates visted</h3>             <p>10/5/2024</p>         </center></body>     </html>     </div>`)[0];
+                popup_a6676da277e10d587bf2926abb5db564.setContent(html_ed6af2df8d81cd2ac531e722391cc1d2);
+            
+        
+
+        marker_b40d135c49ef4328b94a9d289cf0ac02.bindPopup(popup_a6676da277e10d587bf2926abb5db564)
+        ;
+
+        
+    
+    
+            var marker_11def706782221071ea136a447d8f820 = L.marker(
+                [39.010583431093735, -78.30396483010674],
+                {}
+            ).addTo(map_6855e3fba55c3e60c98300fd0c1bde52);
+        
+    
+            var icon_a9b88552add21657b93d702b3df798f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "landmark", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_11def706782221071ea136a447d8f820.setIcon(icon_a9b88552add21657b93d702b3df798f2);
+        
+    
+        var popup_b67116686f57718b250498bc72c9dee8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0500b649f6bb699bf6cdb00e4a4b90a9 = $(`<div id="html_0500b649f6bb699bf6cdb00e4a4b90a9" style="width: 100.0%; height: 100.0%;">     <!DOCTYPE html>     <html>         <body><center>             <h3>Ceader Creek & Belle Grove</h3>             <p>National Historic Park</p>             <h3>Dates visted</h3>             <p>8/29/2024</p>         </center></body>     </html>     </div>`)[0];
+                popup_b67116686f57718b250498bc72c9dee8.setContent(html_0500b649f6bb699bf6cdb00e4a4b90a9);
+            
+        
+
+        marker_11def706782221071ea136a447d8f820.bindPopup(popup_b67116686f57718b250498bc72c9dee8)
+        ;
+
+        
+    
+    
+            var marker_934e0a18a8b6316143e3cbde962ec060 = L.marker(
+                [38.49049386523605, -78.46178063994944],
+                {}
+            ).addTo(map_6855e3fba55c3e60c98300fd0c1bde52);
+        
+    
+            var icon_70cadc8d35e29a484a6509ffb7452d4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_934e0a18a8b6316143e3cbde962ec060.setIcon(icon_70cadc8d35e29a484a6509ffb7452d4d);
+        
+    
+        var popup_1bc976f6bca762062326bd4958d5b280 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b78220371c4aaf24387eb13db7a85a06 = $(`<div id="html_b78220371c4aaf24387eb13db7a85a06" style="width: 100.0%; height: 100.0%;">     <!DOCTYPE html>     <html>         <body><center>             <h3>Shenandoah</h3>             <p>National Park</p>             <h3>Dates visted</h3>             <p>8/27/2024-8/29/2024</p>         </center></body>     </html>     </div>`)[0];
+                popup_1bc976f6bca762062326bd4958d5b280.setContent(html_b78220371c4aaf24387eb13db7a85a06);
+            
+        
+
+        marker_934e0a18a8b6316143e3cbde962ec060.bindPopup(popup_1bc976f6bca762062326bd4958d5b280)
+        ;
+
+        
+    
+    
+            var marker_565b14529469cd40a7b03c50bf080c20 = L.marker(
+                [41.25774781799167, -73.45587257233741],
+                {}
+            ).addTo(map_6855e3fba55c3e60c98300fd0c1bde52);
+        
+    
+            var icon_979dc4be3ba93f7a1125684091bdaf05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "landmark", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_565b14529469cd40a7b03c50bf080c20.setIcon(icon_979dc4be3ba93f7a1125684091bdaf05);
+        
+    
+        var popup_3f06d668c33fc3293d9f5aeb20b9e348 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b83d85ae40182a9b2486f08265055166 = $(`<div id="html_b83d85ae40182a9b2486f08265055166" style="width: 100.0%; height: 100.0%;">     <!DOCTYPE html>     <html>         <body><center>             <h3>Weir Farm</h3>             <p>National Historic Park</p>             <h3>Dates visted</h3>             <p>9/27/2024</p>         </center></body>     </html>     </div>`)[0];
+                popup_3f06d668c33fc3293d9f5aeb20b9e348.setContent(html_b83d85ae40182a9b2486f08265055166);
+            
+        
+
+        marker_565b14529469cd40a7b03c50bf080c20.bindPopup(popup_3f06d668c33fc3293d9f5aeb20b9e348)
+        ;
+
+        
+    
+    
+            var marker_c1d320c6d998779c17b3f096c9f1378d = L.marker(
+                [42.34709066933196, -71.1233103012997],
+                {}
+            ).addTo(map_6855e3fba55c3e60c98300fd0c1bde52);
+        
+    
+            var icon_6d978f4108ba6dbc2f666cc86b89a043 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "landmark-dome", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_c1d320c6d998779c17b3f096c9f1378d.setIcon(icon_6d978f4108ba6dbc2f666cc86b89a043);
+        
+    
+        var popup_a35fbe3675cc6aee52a04df8439bf575 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5ed3da0c24d2fb101b063d22884f8846 = $(`<div id="html_5ed3da0c24d2fb101b063d22884f8846" style="width: 100.0%; height: 100.0%;">     <!DOCTYPE html>     <html>         <body><center>             <h3>John Fitzgerald Kennedy</h3>             <p>National Historic Site</p>             <h3>Dates visted</h3>             <p>10/18/2024</p>         </center></body>     </html>     </div>`)[0];
+                popup_a35fbe3675cc6aee52a04df8439bf575.setContent(html_5ed3da0c24d2fb101b063d22884f8846);
+            
+        
+
+        marker_c1d320c6d998779c17b3f096c9f1378d.bindPopup(popup_a35fbe3675cc6aee52a04df8439bf575)
+        ;
+
+        
+    
+    
+            var marker_246ef9f9d4f0a5d42bb5520d4b557397 = L.marker(
+                [42.32543336080815, -71.13228325847793],
+                {}
+            ).addTo(map_6855e3fba55c3e60c98300fd0c1bde52);
+        
+    
+            var icon_4e6fb921cc408eaa7dfb422b81479190 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "landmark-dome", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_246ef9f9d4f0a5d42bb5520d4b557397.setIcon(icon_4e6fb921cc408eaa7dfb422b81479190);
+        
+    
+        var popup_cd7b70ee22a2ebc3f019981f802c234f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e550abc395a48e4fe0a8206ced5b79ac = $(`<div id="html_e550abc395a48e4fe0a8206ced5b79ac" style="width: 100.0%; height: 100.0%;">     <!DOCTYPE html>     <html>         <body><center>             <h3>Fredrick Law Olmsted</h3>             <p>National Historic Site</p>             <h3>Dates visted</h3>             <p>10/18/2024</p>         </center></body>     </html>     </div>`)[0];
+                popup_cd7b70ee22a2ebc3f019981f802c234f.setContent(html_e550abc395a48e4fe0a8206ced5b79ac);
+            
+        
+
+        marker_246ef9f9d4f0a5d42bb5520d4b557397.bindPopup(popup_cd7b70ee22a2ebc3f019981f802c234f)
+        ;
+
+        
+    
+    
+            var marker_4b8097ca6b67d51f2ebd14843fb87b61 = L.marker(
+                [42.36035674684861, -71.05508461629267],
+                {}
+            ).addTo(map_6855e3fba55c3e60c98300fd0c1bde52);
+        
+    
+            var icon_1e994c90ab2b29ccd1634ba99bb8747c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "landmark", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_4b8097ca6b67d51f2ebd14843fb87b61.setIcon(icon_1e994c90ab2b29ccd1634ba99bb8747c);
+        
+    
+        var popup_519c3c9138d596e9fc390f60e7f4e3d7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6a645899f635886826ac6b99b172f384 = $(`<div id="html_6a645899f635886826ac6b99b172f384" style="width: 100.0%; height: 100.0%;">     <!DOCTYPE html>     <html>         <body><center>             <h3>Boston</h3>             <p>National Historic Park</p>             <h3>Dates visted</h3>             <p>10/18/2024</p>         </center></body>     </html>     </div>`)[0];
+                popup_519c3c9138d596e9fc390f60e7f4e3d7.setContent(html_6a645899f635886826ac6b99b172f384);
+            
+        
+
+        marker_4b8097ca6b67d51f2ebd14843fb87b61.bindPopup(popup_519c3c9138d596e9fc390f60e7f4e3d7)
+        ;
+
+        
+    
+    
+            var marker_7f966f28daf1e7609674a0cea06c0123 = L.marker(
+                [42.35912201968068, -71.0651826114738],
+                {}
+            ).addTo(map_6855e3fba55c3e60c98300fd0c1bde52);
+        
+    
+            var icon_dd7727a2f7283f7fd233eaadd8eb9d58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "landmark-dome", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_7f966f28daf1e7609674a0cea06c0123.setIcon(icon_dd7727a2f7283f7fd233eaadd8eb9d58);
+        
+    
+        var popup_c40df17f70ed023a0c6995a056a4e173 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c80425991ff6cc33fe28f1e0a4d44bf7 = $(`<div id="html_c80425991ff6cc33fe28f1e0a4d44bf7" style="width: 100.0%; height: 100.0%;">     <!DOCTYPE html>     <html>         <body><center>             <h3>Boston African American</h3>             <p>National Historic Site</p>             <h3>Dates visted</h3>             <p>10/18/2024</p>         </center></body>     </html>     </div>`)[0];
+                popup_c40df17f70ed023a0c6995a056a4e173.setContent(html_c80425991ff6cc33fe28f1e0a4d44bf7);
+            
+        
+
+        marker_7f966f28daf1e7609674a0cea06c0123.bindPopup(popup_c40df17f70ed023a0c6995a056a4e173)
+        ;
+
+        
+    
+    
+            var marker_93bbc7b6815a29262930978101faf15a = L.marker(
+                [42.45433317118441, -71.30143511799872],
+                {}
+            ).addTo(map_6855e3fba55c3e60c98300fd0c1bde52);
+        
+    
+            var icon_651ec8dd1b085b32be294e71b0030bd0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "landmark", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_93bbc7b6815a29262930978101faf15a.setIcon(icon_651ec8dd1b085b32be294e71b0030bd0);
+        
+    
+        var popup_635b449c8f2639c9d282d90ee219de89 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4945f04a84d42d03255ed9ccf6ce633e = $(`<div id="html_4945f04a84d42d03255ed9ccf6ce633e" style="width: 100.0%; height: 100.0%;">     <!DOCTYPE html>     <html>         <body><center>             <h3>Minute Man</h3>             <p>National Historic Park</p>             <h3>Dates visted</h3>             <p>10/19/2024</p>         </center></body>     </html>     </div>`)[0];
+                popup_635b449c8f2639c9d282d90ee219de89.setContent(html_4945f04a84d42d03255ed9ccf6ce633e);
+            
+        
+
+        marker_93bbc7b6815a29262930978101faf15a.bindPopup(popup_635b449c8f2639c9d282d90ee219de89)
+        ;
+
+        
+    
+    
+            var marker_c67da86126d90350aecbcbcbfd53a2aa = L.marker(
+                [42.10752406133906, -72.58125082779706],
+                {}
+            ).addTo(map_6855e3fba55c3e60c98300fd0c1bde52);
+        
+    
+            var icon_c731663569d7383566240029a899dc5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "landmark-dome", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_c67da86126d90350aecbcbcbfd53a2aa.setIcon(icon_c731663569d7383566240029a899dc5f);
+        
+    
+        var popup_4553cf6b2e6e4333d90ff327e410a91c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f61cffbe001b16be0e16708ea7641662 = $(`<div id="html_f61cffbe001b16be0e16708ea7641662" style="width: 100.0%; height: 100.0%;">     <!DOCTYPE html>     <html>         <body><center>             <h3>Springfield Armory</h3>             <p>National Historic Site</p>             <h3>Dates visted</h3>             <p>10/20/2024</p>         </center></body>     </html>     </div>`)[0];
+                popup_4553cf6b2e6e4333d90ff327e410a91c.setContent(html_f61cffbe001b16be0e16708ea7641662);
+            
+        
+
+        marker_c67da86126d90350aecbcbcbfd53a2aa.bindPopup(popup_4553cf6b2e6e4333d90ff327e410a91c)
+        ;
+
+        
+    
+    
+            var marker_e0b562246b21cb37279f6ac96c2b00c4 = L.marker(
+                [41.21918903447282, -74.87313813999978],
+                {}
+            ).addTo(map_6855e3fba55c3e60c98300fd0c1bde52);
+        
+    
+            var icon_544ca5f62df4b6065ab6e2cf51b9e226 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "compass", "iconColor": "white", "markerColor": "darkpurple", "prefix": "fa"}
+            );
+            marker_e0b562246b21cb37279f6ac96c2b00c4.setIcon(icon_544ca5f62df4b6065ab6e2cf51b9e226);
+        
+    
+        var popup_903b456232219c14e3e6397a9b1acd7c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e7ea652197276b32a7d27919424bcc6a = $(`<div id="html_e7ea652197276b32a7d27919424bcc6a" style="width: 100.0%; height: 100.0%;">     <!DOCTYPE html>     <html>         <body><center>             <h3>Delaware Water Gap</h3>             <p>National Recration Area</p>             <h3>Dates visted</h3>             <p>11/1/2024</p>         </center></body>     </html>     </div>`)[0];
+                popup_903b456232219c14e3e6397a9b1acd7c.setContent(html_e7ea652197276b32a7d27919424bcc6a);
+            
+        
+
+        marker_e0b562246b21cb37279f6ac96c2b00c4.bindPopup(popup_903b456232219c14e3e6397a9b1acd7c)
+        ;
+
+        
+    
+    
+            var marker_477a075aa4ba237cff897e04ccec4d2a = L.marker(
+                [40.68936283772997, -74.04416753878814],
+                {}
+            ).addTo(map_6855e3fba55c3e60c98300fd0c1bde52);
+        
+    
+            var icon_024c4aaeefe26348e6de132b8f866df2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "monument", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_477a075aa4ba237cff897e04ccec4d2a.setIcon(icon_024c4aaeefe26348e6de132b8f866df2);
+        
+    
+        var popup_e82c216caaaa01b51d1f7dd0aeab22a1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_25d4872834aff52c5c87b553b240ab52 = $(`<div id="html_25d4872834aff52c5c87b553b240ab52" style="width: 100.0%; height: 100.0%;">     <!DOCTYPE html>     <html>         <body><center>             <h3>Statue of Liberty</h3>             <p>National Monument</p>             <h3>Dates visted</h3>             <p>11/8/2024</p>         </center></body>     </html>     </div>`)[0];
+                popup_e82c216caaaa01b51d1f7dd0aeab22a1.setContent(html_25d4872834aff52c5c87b553b240ab52);
+            
+        
+
+        marker_477a075aa4ba237cff897e04ccec4d2a.bindPopup(popup_e82c216caaaa01b51d1f7dd0aeab22a1)
+        ;
+
+        
+    
+    
+            var marker_1040338ab628a1faa0b48bd31dc15c58 = L.marker(
+                [41.79663705173277, -73.94229353560232],
+                {}
+            ).addTo(map_6855e3fba55c3e60c98300fd0c1bde52);
+        
+    
+            var icon_5114fcb625ea947d9fb6896df8a0d397 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "landmark-dome", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_1040338ab628a1faa0b48bd31dc15c58.setIcon(icon_5114fcb625ea947d9fb6896df8a0d397);
+        
+    
+        var popup_9514ea0874dd9aeb68923b6f4ebb76a7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f8256229ce00d245905076c517459ae1 = $(`<div id="html_f8256229ce00d245905076c517459ae1" style="width: 100.0%; height: 100.0%;">     <!DOCTYPE html>     <html>         <body><center>             <h3>Vanderbilt Mansion</h3>             <p>National Historic Site</p>             <h3>Dates visted</h3>             <p>11/11/2024</p>         </center></body>     </html>     </div>`)[0];
+                popup_9514ea0874dd9aeb68923b6f4ebb76a7.setContent(html_f8256229ce00d245905076c517459ae1);
+            
+        
+
+        marker_1040338ab628a1faa0b48bd31dc15c58.bindPopup(popup_9514ea0874dd9aeb68923b6f4ebb76a7)
+        ;
+
+        
+    
+    
+            var marker_96850de41786a3b7eb4757be4122496d = L.marker(
+                [41.76811541744343, -73.93500258991189],
+                {}
+            ).addTo(map_6855e3fba55c3e60c98300fd0c1bde52);
+        
+    
+            var icon_c422c9e1235bdea80b5c5f524df661cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "landmark-dome", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_96850de41786a3b7eb4757be4122496d.setIcon(icon_c422c9e1235bdea80b5c5f524df661cb);
+        
+    
+        var popup_bf61233745f9e48cdee03104f3c61b36 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d2a092f5bffe28f8f9870c96c89c5d94 = $(`<div id="html_d2a092f5bffe28f8f9870c96c89c5d94" style="width: 100.0%; height: 100.0%;">     <!DOCTYPE html>     <html>         <body><center>             <h3>Home of Franklin D. Roosevelt</h3>             <p>National Historic Site</p>             <h3>Dates visted</h3>             <p>11/11/2024</p>         </center></body>     </html>     </div>`)[0];
+                popup_bf61233745f9e48cdee03104f3c61b36.setContent(html_d2a092f5bffe28f8f9870c96c89c5d94);
+            
+        
+
+        marker_96850de41786a3b7eb4757be4122496d.bindPopup(popup_bf61233745f9e48cdee03104f3c61b36)
+        ;
+
+        
+    
+</script>
+</html>
