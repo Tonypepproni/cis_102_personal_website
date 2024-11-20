@@ -61,6 +61,12 @@ nav > ul {
     margin: 10px;
 }
 
+#all-shows > ul{
+    column-count: 2;
+    list-style-type: none;
+    padding-left: 0;
+}
+
 footer {
     background-color: #262d79;
     display: flex;
@@ -102,6 +108,10 @@ footer {
         display: flex;
         flex-direction: row;
         text-align: left;
+    }
+
+    #all-shows ul{
+        column-count: 1;
     }
 }
 
@@ -207,11 +217,6 @@ nav > ul > li:hover, #all-sites li:hover {
     align-items: flex-start;
     border: 5px solid #475492;
     flex-grow: 0;
-}
-
-#all-shows > ul{
-    column-count: 2;
-    list-style-type: none;
 }
 
 #all-shows >  ul > li{
