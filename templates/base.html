@@ -5,6 +5,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <script src="https://kit.fontawesome.com/72d881ae9e.js" crossorigin="anonymous"></script>
+
         <title>{% block title %}{% endblock %}</title>
     </head>
 
@@ -23,6 +25,7 @@
                         <a href ="{{ page.url }}">{{ page.name }}</a>
                     </li>
                 {% endfor %}
+                <button onclick="collapse"> <i class="fas fa-bars"></i></button>
             </ul>
         </nav>
 

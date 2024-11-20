@@ -32,10 +32,23 @@ nav {
     overflow: hidden;
 }
 
+nav > ul > button{
+    background-color: #88a2c4;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav > ul > button > i{
+    color: #03045e;
+}
+
 nav > ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     overflow: hidden;
     list-style-type: none;
     flex-wrap: wrap;
