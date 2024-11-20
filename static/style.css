@@ -28,6 +28,12 @@ nav > ul {
         height: 300px;
         margin-left: 0;
     }
+
+    #all_parks li{
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
 }
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) /* Tablet/small laptop */{
@@ -143,9 +149,14 @@ nav > ul > li:hover, #all-sites li:hover {
     flex-shrink: 1;
 }
 
+#all_parks{
+    padding-left: 0px;
+}
+
 #all_parks li{
     display: flex;
     list-style-type: disc;
+    margin-top: 5px;
 }
 
 #nat_sites_stats{

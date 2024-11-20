@@ -3,7 +3,7 @@ import pandas as pd
 
 df=pd.read_csv('static/info/parks.csv')
 
-m = folium.Map(location=(39.50, -98.35), zoom_start=3, tiles="cartodb positron")
+m = folium.Map(location=(41.087564845018235, -74.0133280647248), zoom_start=7, tiles="cartodb positron")
 
 def iconMaker(color,icon,prefix):
     return folium.Icon(color=color,icon=icon,prefix=prefix)
